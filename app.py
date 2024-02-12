@@ -16,7 +16,7 @@ from htmlTemplates import css, bot_template, user_template
 
 
 
-load_dotenv()
+
 
 # Access the environment variable
 huggingface_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
@@ -91,7 +91,7 @@ def main():
 
     st.write(css, unsafe_allow_html= True)
 
-    st.header("chat with multiple PDFs :books:")
+    st.header("Chat With Multiple PDF's :books:")
     user_question = st.text_input("Ask a question about your documents:")
     if user_question:
         handle_userinput(user_question)

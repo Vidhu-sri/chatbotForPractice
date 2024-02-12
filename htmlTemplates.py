@@ -4,10 +4,11 @@ css = '''
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
 }
 .chat-message.user {
-    background-color: #2b313e
+    background-color: #475063;
+    border-color: #FFAB2D;
 }
 .chat-message.bot {
-    background-color: #475063
+    background-color: #2580D5
 }
 .chat-message .avatar {
   width: 20%;
@@ -28,7 +29,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="https://i.ibb.co/cN0nmSj/Screenshot-2023-05-28-at-02-37-21.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://th.bing.com/th/id/OIG.gUKnxIhk7lvy82.MKaZx?pid=ImgGn" style="max-height: 78px; max-width: 78px; border-radius: 5%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +38,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg">
+        <img src="https://raw.githubusercontent.com/GnananSai/CodeCraft-TM-PAI/main/static/person.png" style="border-radius: 5%;">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
